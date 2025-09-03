@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - L y B Digital Solutions</title>
+    <meta name="description" content="Contáctanos para tu proyecto web. Diseño web, SEO y mantenimiento profesional. Cotización gratuita y consultoría personalizada.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="logo neon.png" alt="L y B Digital Solutions" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="diseno-web.html" class="nav-link">Diseño Web</a></li>
+                    <li><a href="seo.html" class="nav-link">SEO</a></li>
+                    <li><a href="mantenimiento.html" class="nav-link">Mantenimiento</a></li>
+                    <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1>¿Listo para Transformar tu Presencia Digital?</h1>
+                <p>Cuéntanos sobre tu proyecto y te ayudaremos a llevarlo al siguiente nivel. Consultoría gratuita y cotización sin compromiso.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h2>Envíanos un Mensaje</h2>
+                        <p>Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas</p>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Nombre *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Apellido *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" name="phone">
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Empresa</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Servicio de Interés *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option value="diseno-web">Diseño Web</option>
+                                <option value="seo">SEO</option>
+                                <option value="mantenimiento">Mantenimiento Web</option>
+                                <option value="consultoria">Consultoría Digital</option>
+                                <option value="multiple">Múltiples Servicios</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Presupuesto Estimado</label>
+                            <select id="budget" name="budget">
+                                <option value="">Selecciona un rango</option>
+                                <option value="500-1000">$500 - $1,000</option>
+                                <option value="1000-2500">$1,000 - $2,500</option>
+                                <option value="2500-5000">$2,500 - $5,000</option>
+                                <option value="5000-10000">$5,000 - $10,000</option>
+                                <option value="10000+">$10,000+</option>
+                                <option value="no-seguro">No estoy seguro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="timeline">¿Cuándo necesitas el proyecto?</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Selecciona un plazo</option>
+                                <option value="inmediato">Lo antes posible</option>
+                                <option value="1-mes">En 1 mes</option>
+                                <option value="2-3-meses">En 2-3 meses</option>
+                                <option value="3-6-meses">En 3-6 meses</option>
+                                <option value="flexible">Soy flexible</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Cuéntanos sobre tu proyecto *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Describe tu proyecto, objetivos, requisitos específicos o cualquier información relevante..." required></textarea>
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Quiero recibir consejos y actualizaciones sobre marketing digital
+                            </label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span class="checkmark"></span>
+                                Acepto la <a href="#" target="_blank">política de privacidad</a> y el tratamiento de mis datos *
+                            </label>
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Enviar Mensaje</span>
+                            <div class="loading-spinner" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </div>
+                        </button>
+                        
+                        <div class="form-success" id="formSuccess" style="display: none;">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>¡Mensaje Enviado!</h3>
+                            <p>Gracias por contactarnos. Nos pondremos en contacto contigo en menos de 24 horas.</p>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info-container">
+                    <div class="contact-info-card">
+                        <h3>Información de Contacto</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>info@lyb.com</p>
+                                <p>ventas@lyb.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Teléfono</h4>
+                                <p>+1 (555) 123-4567</p>
+                                <p>+1 (555) 987-6543</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Oficina</h4>
+                                <p>123 Business Street</p>
+                                <p>Ciudad, Estado 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Horario de Atención</h4>
+                                <p>Lun - Vie: 9:00 AM - 6:00 PM</p>
+                                <p>Sáb: 10:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Contact Cards -->
+                    <div class="quick-contact-cards">
+                        <div class="quick-contact-card">
+                            <div class="quick-contact-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h4>Chat en Vivo</h4>
+                            <p>Habla con nuestro equipo ahora</p>
+                            <a href="#" class="quick-contact-btn">Iniciar Chat</a>
+                        </div>
+                        
+                        <div class="quick-contact-card">
+                            <div class="quick-contact-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h4>Agendar Llamada</h4>
+                            <p>Consultoría gratuita de 30 min</p>
+                            <a href="#" class="quick-contact-btn">Agendar</a>
+                        </div>
+                        
+                        <div class="quick-contact-card">
+                            <div class="quick-contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <h4>WhatsApp</h4>
+                            <p>Respuesta inmediata</p>
+                            <a href="https://wa.me/15551234567" class="quick-contact-btn" target="_blank">Escribir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestra Ubicación</h2>
+                <p>Visítanos en nuestra oficina o trabajemos de forma remota</p>
+            </div>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>L y B Digital Solutions</h3>
+                        <p>123 Business Street<br>Ciudad, Estado 12345</p>
+                        <a href="https://maps.google.com" target="_blank" class="btn btn-secondary">
+                            <i class="fas fa-directions"></i>
+                            Ver en Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Preguntas Frecuentes</h2>
+                <p>Respuestas a las consultas más comunes</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>¿Cuánto tiempo toma desarrollar un sitio web?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>El tiempo varía según la complejidad: sitios básicos (2-4 semanas), sitios corporativos (4-8 semanas), e-commerce (6-12 semanas). Te daremos un cronograma detallado después de evaluar tu proyecto.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>¿Ofrecen garantía en sus servicios?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, ofrecemos garantía de 30 días en todos nuestros desarrollos web y 90 días de soporte gratuito. Para SEO, garantizamos mejoras medibles en 6 meses o trabajamos gratis hasta lograrlo.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>¿Trabajan con empresas de cualquier tamaño?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutamente. Trabajamos desde emprendedores y pequeñas empresas hasta corporaciones grandes. Adaptamos nuestros servicios y precios a las necesidades específicas de cada cliente.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>¿Qué incluye la consultoría gratuita?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Incluye análisis de tu situación actual, recomendaciones estratégicas, propuesta de soluciones, cronograma estimado y cotización detallada. Todo sin compromiso y completamente gratis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Tienes Dudas? ¡Hablemos!</h2>
+                <p>Nuestro equipo está listo para ayudarte a hacer realidad tu proyecto digital</p>
+                <div class="cta-buttons">
+                    <a href="tel:+15551234567" class="btn btn-primary">
+                        <i class="fas fa-phone"></i>
+                        Llamar Ahora
+                    </a>
+                    <a href="mailto:info@lyb.com" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Enviar Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo neon.png" alt="L y B Digital Solutions" class="footer-logo-img">
+                    </div>
+                    <p>Transformamos ideas en experiencias digitales excepcionales que impulsan el crecimiento de tu negocio.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="diseno-web.html">Diseño Web</a></li>
+                        <li><a href="seo.html">SEO</a></li>
+                        <li><a href="mantenimiento.html">Mantenimiento</a></li>
+                        <li><a href="contacto.html">Consultoría</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@lyb.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Ciudad, País</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 L y B Digital Solutions. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Contact form specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const formSuccess = document.getElementById('formSuccess');
+            
+            // Form validation
+            function validateForm() {
+                let isValid = true;
+                const requiredFields = form.querySelectorAll('[required]');
+                
+                requiredFields.forEach(field => {
+                    const errorSpan = field.parentNode.querySelector('.error-message');
+                    
+                    if (!field.value.trim()) {
+                        showError(field, 'Este campo es obligatorio');
+                        isValid = false;
+                    } else {
+                        clearError(field);
+                        
+                        // Email validation
+                        if (field.type === 'email' && !isValidEmail(field.value)) {
+                            showError(field, 'Por favor ingresa un email válido');
+                            isValid = false;
+                        }
+                    }
+                });
+                
+                return isValid;
+            }
+            
+            function showError(field, message) {
+                const errorSpan = field.parentNode.querySelector('.error-message');
+                field.classList.add('error');
+                errorSpan.textContent = message;
+                errorSpan.style.display = 'block';
+            }
+            
+            function clearError(field) {
+                const errorSpan = field.parentNode.querySelector('.error-message');
+                field.classList.remove('error');
+                errorSpan.textContent = '';
+                errorSpan.style.display = 'none';
+            }
+            
+            function isValidEmail(email) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
+            }
+            
+            // Form submission
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                if (validateForm()) {
+                    // Show loading state
+                    submitBtn.disabled = true;
+                    submitBtn.querySelector('span').style.display = 'none';
+                    submitBtn.querySelector('.loading-spinner').style.display = 'inline-block';
+                    
+                    // Simulate form submission (replace with actual submission logic)
+                    setTimeout(() => {
+                        // Hide form and show success message
+                        form.style.display = 'none';
+                        formSuccess.style.display = 'block';
+                        
+                        // Reset form after showing success
+                        setTimeout(() => {
+                            form.reset();
+                            form.style.display = 'block';
+                            formSuccess.style.display = 'none';
+                            submitBtn.disabled = false;
+                            submitBtn.querySelector('span').style.display = 'inline';
+                            submitBtn.querySelector('.loading-spinner').style.display = 'none';
+                        }, 3000);
+                    }, 2000);
+                }
+            });
+            
+            // Real-time validation
+            const inputs = form.querySelectorAll('input, select, textarea');
+            inputs.forEach(input => {
+                input.addEventListener('blur', function() {
+                    if (this.hasAttribute('required') && !this.value.trim()) {
+                        showError(this, 'Este campo es obligatorio');
+                    } else if (this.type === 'email' && this.value && !isValidEmail(this.value)) {
+                        showError(this, 'Por favor ingresa un email válido');
+                    } else {
+                        clearError(this);
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- Chatbot Button -->
+    <div class="chatbot-button" id="chatbotButton">
+        <i class="fas fa-comments"></i>
+    </div>
+</body>
+</html>
